@@ -1,0 +1,14 @@
+%common_content {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content_block {
+   @extend %common_content;
+    flex-direction: column;
+
+}
+

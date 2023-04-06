@@ -1,0 +1,54 @@
+.header {
+    background-color: #0083FF;
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.currency_block {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 10px;
+}
+
+.currency_child + .currency_child {
+    margin-left: 12px;
+}
+
+.currency_child {
+    color: black;
+    font-size: 18px;
+    transition: .5s linear;;
+
+    &:visited {
+        color: black;
+    }
+    &:hover {
+        cursor: pointer;
+        color: #96cef6;
+        transition: transform .5s;
+    }
+}
+
+.selected {
+    color: white;
+    &:visited {
+        color: white;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .currency_child {
+        font-size: 14px;
+    }
+}

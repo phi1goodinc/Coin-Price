@@ -1,0 +1,30 @@
+.block {
+  background-color: #0083FF;
+  height: 10vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.elements {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.instagram_logo {
+  color: #282c34;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.rights {
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .block {
+    justify-content: center;
+  }
+}

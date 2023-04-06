@@ -1,0 +1,44 @@
+.choice_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin {
+  margin: 0 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px 20px 0 20px;
+  transition: transform .5s;
+
+  h2 {
+    color: black;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.currency_logo {
+  pointer-events: all;
+}
+
+@media (max-width: 500px) {
+  .coin {
+    margin: 0 5px;
+    padding: 15px 10px 0 10px;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

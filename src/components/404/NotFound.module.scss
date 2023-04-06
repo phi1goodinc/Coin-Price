@@ -1,0 +1,16 @@
+.button {
+  color: black;
+  border-radius: 20px;
+  padding: 15px;
+  transition: .5s linear;
+  background: #0083FF;
+
+  &:hover {
+    cursor: pointer;
+    background: #00abff;
+  }
+}
+
+.button_wrapper {
+  padding: 20px 0;
+}
